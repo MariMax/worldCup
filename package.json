@@ -1,7 +1,7 @@
 {
   "name": "handsomeTry",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {}, 
    "scripts": {
     "start": "gulp serve dev=1",
     "postinstall": "gulp build"
