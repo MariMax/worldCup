@@ -4,4 +4,3 @@ dist
 .tmp
 .sass-cache
 coverage
-src/assets/css/compilledCss
