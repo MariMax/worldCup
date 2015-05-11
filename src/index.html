@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" ng-app="worldCup">
+  <head>
+    <meta charset="utf-8">
+    <title>World Cup Results</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({.tmp,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap-css-only/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,src}) styles/app.css -->
+    <!-- inject:userCss -->
+    <link rel="stylesheet" href="css/chart-view.css">
+    <link rel="stylesheet" href="css/groupSelector.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table-view.css">
+    <link rel="stylesheet" href="css/unsupported.css">
+    <!-- endinject -->     
+    <!-- endbuild -->
+  </head>
+  <body ng-controller="globalCtrl">
+    <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+<div class="header">
+<img alt="Ball" src="assets/images/ball.png">
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div ui-view></div>
+    </div>
+  </div>
+</div>
+
+    <div class="show-loader" ng-show="loader.loader">
+      <img src="assets/images/loader.gif" alt="">
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.js"></script>
+    <script src="../bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="../bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="../bower_components/d3/d3.js"></script>
+    <script src="../bower_components/d3pie/d3pie/d3pie.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,src}) scripts/app.js -->
+    <!-- inject:userJS -->
+    <script src="app/home/home.module.js"></script>
+    <script src="app/home/services/enums.js"></script>
+    <script src="app/home/services/dataSvc.js"></script>
+    <script src="app/home/services/colorGenerator.js"></script>
+    <script src="app/home/services/backEnd.js"></script>
+    <script src="app/home/directives/chartView.js"></script>
+    <script src="app/home/controllers/list.controller.js"></script>
+    <script src="app/home/controllers/details.controller.js"></script>
+    <script src="app/home/mock.js"></script>
+    <script src="app/home/home.router.js"></script>
+    <script src="app/config/distConfig.js"></script>
+    <script src="app/main.js"></script>
+    <!-- endinject -->
+    <!-- inject:partials -->
+    <!-- endinject -->    
+    <!-- endbuild -->
+
+  </body>
+</html>

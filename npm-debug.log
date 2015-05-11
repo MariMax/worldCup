@@ -1,0 +1,242 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json handsomeTry@0.0.0 No description
+6 warn package.json handsomeTry@0.0.0 No repository field.
+7 warn package.json handsomeTry@0.0.0 No README data
+8 verbose install where, deps [ 'F:\\Progects\\germanyTest\\angularWorkflow',
+8 verbose install   [ 'browser-sync',
+8 verbose install     'chalk',
+8 verbose install     'del',
+8 verbose install     'gulp',
+8 verbose install     'gulp-angular-filesort',
+8 verbose install     'gulp-autoprefixer',
+8 verbose install     'gulp-bower',
+8 verbose install     'gulp-cache',
+8 verbose install     'gulp-csso',
+8 verbose install     'gulp-debug',
+8 verbose install     'gulp-filter',
+8 verbose install     'gulp-flatten',
+8 verbose install     'gulp-inject',
+8 verbose install     'gulp-jshint',
+8 verbose install     'gulp-karma',
+8 verbose install     'gulp-load-plugins',
+8 verbose install     'gulp-minify-html',
+8 verbose install     'gulp-ng-annotate',
+8 verbose install     'gulp-ng-config',
+8 verbose install     'gulp-ng-html2js',
+8 verbose install     'gulp-protractor',
+8 verbose install     'gulp-replace',
+8 verbose install     'gulp-rev',
+8 verbose install     'gulp-rev-replace',
+8 verbose install     'gulp-size',
+8 verbose install     'gulp-stylus',
+8 verbose install     'gulp-uglify',
+8 verbose install     'gulp-useref',
+8 verbose install     'http-proxy',
+8 verbose install     'jshint-stylish',
+8 verbose install     'karma-chrome-launcher',
+8 verbose install     'karma-coverage',
+8 verbose install     'karma-jasmine',
+8 verbose install     'karma-phantomjs-launcher',
+8 verbose install     'main-bower-files',
+8 verbose install     'protractor',
+8 verbose install     'require-dir',
+8 verbose install     'run-sequence',
+8 verbose install     'streamqueue',
+8 verbose install     'uglify-save-license',
+8 verbose install     'wiredep',
+8 verbose install     'yargs' ] ]
+9 verbose install where, peers [ 'F:\\Progects\\germanyTest\\angularWorkflow', [] ]
+10 info preinstall handsomeTry@0.0.0
+11 verbose already installed skipping gulp-flatten@^0.0.2 F:\Progects\germanyTest\angularWorkflow
+12 verbose already installed skipping gulp-inject@^1.0.0 F:\Progects\germanyTest\angularWorkflow
+13 verbose already installed skipping gulp-jshint@^1.8.0 F:\Progects\germanyTest\angularWorkflow
+14 verbose already installed skipping gulp-karma@^0.0.4 F:\Progects\germanyTest\angularWorkflow
+15 verbose already installed skipping gulp-load-plugins@^0.6.0 F:\Progects\germanyTest\angularWorkflow
+16 verbose already installed skipping gulp-minify-html@^0.1.3 F:\Progects\germanyTest\angularWorkflow
+17 verbose already installed skipping gulp-ng-annotate@^0.5.3 F:\Progects\germanyTest\angularWorkflow
+18 verbose already installed skipping gulp-ng-config@^1.0.0 F:\Progects\germanyTest\angularWorkflow
+19 verbose already installed skipping gulp-ng-html2js@^0.1.6 F:\Progects\germanyTest\angularWorkflow
+20 verbose already installed skipping gulp-protractor@^0.0.11 F:\Progects\germanyTest\angularWorkflow
+21 verbose already installed skipping gulp-replace@^0.4.0 F:\Progects\germanyTest\angularWorkflow
+22 verbose already installed skipping gulp-rev@^1.1.0 F:\Progects\germanyTest\angularWorkflow
+23 verbose already installed skipping gulp-rev-replace@^0.3.0 F:\Progects\germanyTest\angularWorkflow
+24 verbose already installed skipping gulp-size@^1.1.0 F:\Progects\germanyTest\angularWorkflow
+25 verbose already installed skipping gulp-stylus@^1.3.4 F:\Progects\germanyTest\angularWorkflow
+26 verbose already installed skipping gulp-uglify@^1.0.0 F:\Progects\germanyTest\angularWorkflow
+27 verbose already installed skipping gulp-useref@^1.0.0 F:\Progects\germanyTest\angularWorkflow
+28 verbose already installed skipping http-proxy@^1.3.0 F:\Progects\germanyTest\angularWorkflow
+29 verbose already installed skipping jshint-stylish@^0.4.0 F:\Progects\germanyTest\angularWorkflow
+30 verbose already installed skipping karma-chrome-launcher@^0.1.5 F:\Progects\germanyTest\angularWorkflow
+31 verbose already installed skipping karma-coverage@^0.2.6 F:\Progects\germanyTest\angularWorkflow
+32 verbose already installed skipping karma-jasmine@^0.1.5 F:\Progects\germanyTest\angularWorkflow
+33 verbose already installed skipping karma-phantomjs-launcher@^0.1.4 F:\Progects\germanyTest\angularWorkflow
+34 verbose already installed skipping main-bower-files@^2.4.0 F:\Progects\germanyTest\angularWorkflow
+35 verbose already installed skipping protractor@^1.4.0 F:\Progects\germanyTest\angularWorkflow
+36 verbose already installed skipping require-dir@^0.1.0 F:\Progects\germanyTest\angularWorkflow
+37 verbose already installed skipping run-sequence@^1.0.1 F:\Progects\germanyTest\angularWorkflow
+38 verbose already installed skipping streamqueue@^0.1.1 F:\Progects\germanyTest\angularWorkflow
+39 verbose already installed skipping uglify-save-license@^0.4.1 F:\Progects\germanyTest\angularWorkflow
+40 verbose already installed skipping wiredep@^1.8.5 F:\Progects\germanyTest\angularWorkflow
+41 verbose already installed skipping yargs@^3.8.0 F:\Progects\germanyTest\angularWorkflow
+42 verbose already installed skipping browser-sync@^1.3.6 F:\Progects\germanyTest\angularWorkflow
+43 verbose already installed skipping chalk@^0.4.0 F:\Progects\germanyTest\angularWorkflow
+44 verbose already installed skipping del@^0.1.3 F:\Progects\germanyTest\angularWorkflow
+45 verbose already installed skipping gulp@^3.8.0 F:\Progects\germanyTest\angularWorkflow
+46 verbose already installed skipping gulp-angular-filesort@^1.0.4 F:\Progects\germanyTest\angularWorkflow
+47 verbose already installed skipping gulp-autoprefixer@^1.0.1 F:\Progects\germanyTest\angularWorkflow
+48 verbose already installed skipping gulp-bower@0.0.7 F:\Progects\germanyTest\angularWorkflow
+49 verbose already installed skipping gulp-cache@^0.2.0 F:\Progects\germanyTest\angularWorkflow
+50 verbose already installed skipping gulp-csso@^0.2.6 F:\Progects\germanyTest\angularWorkflow
+51 verbose already installed skipping gulp-debug@^1.0.1 F:\Progects\germanyTest\angularWorkflow
+52 verbose already installed skipping gulp-filter@^1.0.0 F:\Progects\germanyTest\angularWorkflow
+53 silly install resolved []
+54 info build F:\Progects\germanyTest\angularWorkflow
+55 verbose linkStuff [ false, false, false, 'F:\\Progects\\germanyTest' ]
+56 info linkStuff handsomeTry@0.0.0
+57 verbose linkBins handsomeTry@0.0.0
+58 verbose linkMans handsomeTry@0.0.0
+59 verbose rebuildBundles handsomeTry@0.0.0
+60 verbose rebuildBundles [ '.bin',
+60 verbose rebuildBundles   'browser-sync',
+60 verbose rebuildBundles   'chalk',
+60 verbose rebuildBundles   'del',
+60 verbose rebuildBundles   'gulp',
+60 verbose rebuildBundles   'gulp-angular-filesort',
+60 verbose rebuildBundles   'gulp-autoprefixer',
+60 verbose rebuildBundles   'gulp-bower',
+60 verbose rebuildBundles   'gulp-cache',
+60 verbose rebuildBundles   'gulp-csso',
+60 verbose rebuildBundles   'gulp-debug',
+60 verbose rebuildBundles   'gulp-filter',
+60 verbose rebuildBundles   'gulp-flatten',
+60 verbose rebuildBundles   'gulp-inject',
+60 verbose rebuildBundles   'gulp-jshint',
+60 verbose rebuildBundles   'gulp-karma',
+60 verbose rebuildBundles   'gulp-load-plugins',
+60 verbose rebuildBundles   'gulp-minify-html',
+60 verbose rebuildBundles   'gulp-ng-annotate',
+60 verbose rebuildBundles   'gulp-ng-config',
+60 verbose rebuildBundles   'gulp-ng-html2js',
+60 verbose rebuildBundles   'gulp-protractor',
+60 verbose rebuildBundles   'gulp-replace',
+60 verbose rebuildBundles   'gulp-rev',
+60 verbose rebuildBundles   'gulp-rev-replace',
+60 verbose rebuildBundles   'gulp-size',
+60 verbose rebuildBundles   'gulp-stylus',
+60 verbose rebuildBundles   'gulp-uglify',
+60 verbose rebuildBundles   'gulp-useref',
+60 verbose rebuildBundles   'http-proxy',
+60 verbose rebuildBundles   'jshint-stylish',
+60 verbose rebuildBundles   'karma',
+60 verbose rebuildBundles   'karma-chrome-launcher',
+60 verbose rebuildBundles   'karma-coverage',
+60 verbose rebuildBundles   'karma-jasmine',
+60 verbose rebuildBundles   'karma-phantomjs-launcher',
+60 verbose rebuildBundles   'main-bower-files',
+60 verbose rebuildBundles   'ng-annotate',
+60 verbose rebuildBundles   'protractor',
+60 verbose rebuildBundles   'require-dir',
+60 verbose rebuildBundles   'run-sequence',
+60 verbose rebuildBundles   'streamqueue',
+60 verbose rebuildBundles   'uglify-save-license',
+60 verbose rebuildBundles   'wiredep',
+60 verbose rebuildBundles   'yargs' ]
+61 verbose rebuild bundle F:\Progects\germanyTest\angularWorkflow\node_modules\karma
+62 info build F:\Progects\germanyTest\angularWorkflow\node_modules\karma
+63 info preinstall karma@0.12.31
+64 verbose linkStuff [ false,
+64 verbose linkStuff   false,
+64 verbose linkStuff   false,
+64 verbose linkStuff   'F:\\Progects\\germanyTest\\angularWorkflow\\node_modules' ]
+65 info linkStuff karma@0.12.31
+66 verbose linkBins karma@0.12.31
+67 verbose link bins [ {},
+67 verbose link bins   'F:\\Progects\\germanyTest\\angularWorkflow\\node_modules\\.bin',
+67 verbose link bins   false ]
+68 verbose linkMans karma@0.12.31
+69 verbose rebuildBundles karma@0.12.31
+70 verbose rebuildBundles [ '.bin',
+70 verbose rebuildBundles   'chokidar',
+70 verbose rebuildBundles   'colors',
+70 verbose rebuildBundles   'connect',
+70 verbose rebuildBundles   'di',
+70 verbose rebuildBundles   'glob',
+70 verbose rebuildBundles   'graceful-fs',
+70 verbose rebuildBundles   'http-proxy',
+70 verbose rebuildBundles   'lodash',
+70 verbose rebuildBundles   'log4js',
+70 verbose rebuildBundles   'mime',
+70 verbose rebuildBundles   'minimatch',
+70 verbose rebuildBundles   'optimist',
+70 verbose rebuildBundles   'q',
+70 verbose rebuildBundles   'rimraf',
+70 verbose rebuildBundles   'socket.io',
+70 verbose rebuildBundles   'source-map',
+70 verbose rebuildBundles   'useragent' ]
+71 info install karma@0.12.31
+72 info postinstall karma@0.12.31
+73 verbose rebuild bundle F:\Progects\germanyTest\angularWorkflow\node_modules\ng-annotate
+74 info build F:\Progects\germanyTest\angularWorkflow\node_modules\ng-annotate
+75 info preinstall ng-annotate@0.15.4
+76 verbose linkStuff [ false,
+76 verbose linkStuff   false,
+76 verbose linkStuff   false,
+76 verbose linkStuff   'F:\\Progects\\germanyTest\\angularWorkflow\\node_modules' ]
+77 info linkStuff ng-annotate@0.15.4
+78 verbose linkBins ng-annotate@0.15.4
+79 verbose link bins [ { 'ng-annotate': './build/es5/ng-annotate' },
+79 verbose link bins   'F:\\Progects\\germanyTest\\angularWorkflow\\node_modules\\.bin',
+79 verbose link bins   false ]
+80 verbose linkMans ng-annotate@0.15.4
+81 verbose rebuildBundles ng-annotate@0.15.4
+82 verbose rebuildBundles [ '.bin',
+82 verbose rebuildBundles   'acorn',
+82 verbose rebuildBundles   'alter',
+82 verbose rebuildBundles   'convert-source-map',
+82 verbose rebuildBundles   'optimist',
+82 verbose rebuildBundles   'ordered-ast-traverse',
+82 verbose rebuildBundles   'simple-fmt',
+82 verbose rebuildBundles   'simple-is',
+82 verbose rebuildBundles   'source-map',
+82 verbose rebuildBundles   'stable',
+82 verbose rebuildBundles   'stringmap',
+82 verbose rebuildBundles   'stringset',
+82 verbose rebuildBundles   'tryor' ]
+83 info install ng-annotate@0.15.4
+84 info postinstall ng-annotate@0.15.4
+85 info install handsomeTry@0.0.0
+86 info postinstall handsomeTry@0.0.0
+87 verbose unsafe-perm in lifecycle true
+88 info handsomeTry@0.0.0 Failed to exec postinstall script
+89 verbose stack Error: handsomeTry@0.0.0 postinstall: `gulp build`
+89 verbose stack Exit status 1
+89 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+89 verbose stack     at EventEmitter.emit (events.js:110:17)
+89 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:14:12)
+89 verbose stack     at ChildProcess.emit (events.js:110:17)
+89 verbose stack     at maybeClose (child_process.js:1015:16)
+89 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+90 verbose pkgid handsomeTry@0.0.0
+91 verbose cwd F:\Progects\germanyTest\angularWorkflow
+92 error Windows_NT 6.3.9600
+93 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i"
+94 error node v0.12.2
+95 error npm  v2.7.4
+96 error code ELIFECYCLE
+97 error handsomeTry@0.0.0 postinstall: `gulp build`
+97 error Exit status 1
+98 error Failed at the handsomeTry@0.0.0 postinstall script 'gulp build'.
+98 error This is most likely a problem with the handsomeTry package,
+98 error not with npm itself.
+98 error Tell the author that this fails on your system:
+98 error     gulp build
+98 error You can get their info via:
+98 error     npm owner ls handsomeTry
+98 error There is likely additional logging output above.
+99 verbose exit [ 1, true ]

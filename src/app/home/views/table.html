@@ -1,0 +1,18 @@
+<div class="table-view">
+	<table class="table table-hover">
+		<thead>
+		<tr>
+		<th>Country</th>
+		<th>FIFA Code</th>
+		<th>Points</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="teamData in item.teams">
+				<td ng-bind="teamData.team.country"></td>
+				<td ng-bind="teamData.team.fifa_code"></td>
+				<td ng-bind="teamData.team.points"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

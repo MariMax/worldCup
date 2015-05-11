@@ -1,0 +1,18 @@
+{
+  "name": "worldCup",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "1.3.x",
+    "angular-ui-router": "0.2.x",
+    "normalize.css": "~3.0.2",
+    "angular-bootstrap": "~0.11.2",
+    "bootstrap-css-only": "~3.3.0",
+    "angular-touch": "~1.3.2",
+    "lodash": "~2.4.1",
+    "angular-mocks": "~1.3.2",
+    "d3pie": "~0.1.8"
+  },
+  "resolutions": {
+    "angular": "1.3.x"
+  }
+}
