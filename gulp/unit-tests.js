@@ -9,11 +9,11 @@ var wiredep = require('wiredep');
 var streamqueue = require('streamqueue');
 var mainBowerFiles = require('main-bower-files');
 
-gulp.task('test', function() {
+gulp.task('test', ['setConfig:test'],function() {
 
   var bowerFiles = gulp.src(mainBowerFiles({filter:/.*js$/}));
 
-  var files = gulp.src('src/{app,components}/**/*.js').pipe($.angularFilesort());
+  var files = gulp.src('src/app/**/*.js').pipe($.angularFilesort());
 
   var tests = gulp.src('test/unit/**/*.js');
 

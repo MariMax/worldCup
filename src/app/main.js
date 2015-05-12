@@ -11,10 +11,11 @@ angular.module('worldCup', ['homeModule', 'configModule'])
     });
 
 //this file will be executed after all, so all requests that we didn't mock we should pass
-angular.module('worldCup').run(function($httpBackend) {
-
-    $httpBackend.whenGET(/.*/).passThrough();
-    $httpBackend.whenPUT(/.*/).passThrough();
-    $httpBackend.whenPOST(/.*/).passThrough();
-    $httpBackend.whenDELETE(/.*/).passThrough();
+angular.module('worldCup').run(function($httpBackend, allowPassThrough) {
+    if (allowPassThrough){
+        $httpBackend.whenGET(/.*/).passThrough();
+        $httpBackend.whenPUT(/.*/).passThrough();
+        $httpBackend.whenPOST(/.*/).passThrough();
+        $httpBackend.whenDELETE(/.*/).passThrough();
+    }
 });

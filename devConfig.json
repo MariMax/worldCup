@@ -1,4 +1,5 @@
 {
   "baseUrl": "http://worldcup.sfg.io",
-  "useGroupMock":true
+  "useGroupMock":true,
+  "allowPassThrough":true
 }

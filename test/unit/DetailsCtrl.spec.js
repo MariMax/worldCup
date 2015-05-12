@@ -1,6 +1,6 @@
 'use strict';
 
-describe('controllers', function() {
+describe('DetailsCtrl', function() {
     var createController, scope, enums, $state;
     beforeEach(module('worldCup'));
     //beforeEach(module('homeModule'));

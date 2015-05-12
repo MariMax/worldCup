@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('homeModule').controller('MainCtrl', function($scope, $state, groups) {
+angular.module('homeModule').controller('ListCtrl', function($scope, $state, groups) {
         var scope = $scope;
         scope.groups = groups;
         scope.activeItem = $state.params.groupId;

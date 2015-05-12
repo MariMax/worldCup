@@ -5,7 +5,7 @@ angular.module('homeModule').config(function($stateProvider) {
         .state('groupList', {
             url: '/groupList',
             templateUrl: 'app/home/views/groupSelector.html',
-            controller: 'MainCtrl',
+            controller: 'ListCtrl',
             resolve: {
                 groups: function(dataSvc) {
                     return dataSvc.getGroups();

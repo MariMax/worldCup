@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var runSequence = require('run-sequence');
 var gulpNgConfig = require('gulp-ng-config');
 var argv = require('yargs').argv;
+var fs = require('fs');
 
 
 var $ = require('gulp-load-plugins')({
@@ -17,15 +18,26 @@ gulp.task('scripts', function() {
         .pipe($.size());
 });
 
-gulp.task('setConfig',['removeConfig'], function(){
-    console.log('ARGV ', argv.dev);
-  gulp.src(argv.dev === 1 ? 'devConfig.json' : 'distConfig.json')
+gulp.task('setConfig', function(){
+    return gulp.src(argv.dev === 1 ? 'devConfig.json' : 'distConfig.json')
+    .pipe(gulpNgConfig('configModule'))
+    .pipe(gulp.dest('src/app/config'))
+});
+
+gulp.task('setConfig:test',['removeConfig'], function(){
+    return gulp.src('testConfig.json')
     .pipe(gulpNgConfig('configModule'))
     .pipe(gulp.dest('src/app/config'))
 });
 
 gulp.task('removeConfig', function(done){
-  $.del(['src/app/config'], done);
+    fs.exists('src/app/config', function(res){
+        if (res){
+            $.del(['src/app/config'], done);
+        } else {
+            done();
+        }
+    });
 });
 
 gulp.task('partials', function() {
@@ -107,9 +119,9 @@ gulp.task('misc', function() {
 });
 
 gulp.task('clean', function(done) {
-    $.del(['.tmp', 'dist', 'bower_components'], done);
+    $.del(['src/app/config','.tmp', 'dist', 'bower_components'], done);
 });
 
 gulp.task('build', ['bower'], function(done) {
-    runSequence(['setConfig', 'html', 'images', 'fonts', 'misc'], done);
+    runSequence(['setConfig', 'images', 'fonts', 'misc', 'html'], done);
 });
