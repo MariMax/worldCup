@@ -25,6 +25,7 @@ We leave the design and user experience completely up to you. Of course we are h
 * Does the app meet the minimum requirements?
 * Is your code clean and well written? What was your approach?
 * How does your app look and feel?
+
 ###Getting started
 
 Just go ahead and create your HTML, CSS and JS files.
