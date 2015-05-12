@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('homeModule',[]);
+angular.module('homeModule',['ui.router', 'ngMockE2E']);

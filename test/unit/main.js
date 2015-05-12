@@ -1,55 +1,78 @@
 'use strict';
 
 describe('controllers', function() {
-    var scope, $httpBackend, $rootScope, createController, mockBackEnd, backEnd;
-
-    beforeEach(module('handsomeTry'));
+    var createController, scope, enums, $state;
+    beforeEach(module('worldCup'));
+    //beforeEach(module('homeModule'));
 
     beforeEach(inject(function($injector) {
-        // Set up the mock http service responses
-        $httpBackend = $injector.get('$httpBackend');
-
         // Get hold of a scope (i.e. the root scope)
-        $rootScope = $injector.get('$rootScope');
+        var $rootScope = $injector.get('$rootScope');
         // The $controller service is used to create instances of controllers
         var $controller = $injector.get('$controller');
+        
+        enums = $injector.get('enums');
 
-        backEnd = $injector.get('backEnd');
+        $state = $injector.get('$state');
 
-        createController = function() {
+        
+
+        createController = function(mode, item) {
             scope = $rootScope.$new();
-            $controller('MainCtrl', {
+            $state.params.mode = mode;
+            $controller('DetailsCtrl', {
                 '$scope': scope,
-                'backEnd':backEnd
+                'item':item,
+                '$state':$state,
+                'enums':enums
             });
         };
     }));
 
     afterEach(function() {
         scope = undefined;
-        $httpBackend.verifyNoOutstandingExpectation();
-        $httpBackend.verifyNoOutstandingRequest();
     });
 
 
-    it('should contain check object with keys check1, check2, check3 and they should be true', function() {
+    it('should set table view', function() {
         expect(scope).toBeUndefined();
+        var view = 'table';
+        createController(view, {});
 
-        createController();
-
-        expect(scope.check).not.toBeUndefined();
-        expect(scope.check).not.toBeNull();
-        expect(scope.check.check1).toBe(true);
-        expect(scope.check.check2).toBe(true);
-        expect(scope.check.check3).toBe(true);
+        expect(scope.currentView).toBe(view);
+        expect(scope.mode).toBe(enums.table);
 
     });
 
-    it('should contain ownModel and it should be All', function() {
+    it('should set chart view', function() {
         expect(scope).toBeUndefined();
+        var view = 'chart';
+        createController(view,{});
 
-        createController();
+        expect(scope.currentView).toBe(view);
+        expect(scope.mode).toBe(enums.chart);
 
-        expect(scope.ownModel).toBe('All');
     });
+
+    it('should set unsupported view', function() {
+        expect(scope).toBeUndefined();
+        var view = 'wrongWay';
+        createController(view, {});
+
+        expect(scope.currentView).toBe(view);
+        expect(scope.mode).toBe(enums.unsupported);
+
+    });
+
+    it('should set notFound view', function() {
+        expect(scope).toBeUndefined();
+        var view = 'notFound';
+        createController(view);
+
+        expect(scope.currentView).toBe(view);
+        expect(scope.mode).toBe(enums.notFound);
+
+    });
+
+
 });

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('worldCup', ['ui.router', 'homeModule', 'ui.bootstrap','configModule','ngMockE2E'])
+angular.module('worldCup', ['homeModule', 'configModule'])
     .config(function($urlRouterProvider) {
         $urlRouterProvider.otherwise('/groupList');
 

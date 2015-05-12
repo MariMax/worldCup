@@ -18,6 +18,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('setConfig',['removeConfig'], function(){
+    console.log('ARGV ', argv.dev);
   gulp.src(argv.dev === 1 ? 'devConfig.json' : 'distConfig.json')
     .pipe(gulpNgConfig('configModule'))
     .pipe(gulp.dest('src/app/config'))
