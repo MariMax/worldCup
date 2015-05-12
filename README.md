@@ -2,7 +2,7 @@
 
 [ ![Codeship Status for MariMax/worldCup](https://codeship.com/projects/b9ad3820-da4e-0132-b82d-5acc9fe35d9d/status?branch=master)](https://codeship.com/projects/79280)
 
-
+[Demo page](http://marimax.github.io/worldCup)
 
 
 The task
