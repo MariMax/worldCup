@@ -6,7 +6,7 @@ angular.module('homeModule').factory('backEnd', function(baseUrl, $http, loader)
             loader.loader = true;
             return $http.get(baseUrl + '/teams/group_results').then(function(resp) {
             	loader.loader = false;
-                return angular.fromJson(resp.data);
+                return resp.data;
             });
         }
     };
