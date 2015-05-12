@@ -13,9 +13,7 @@ angular.module('homeModule').factory('dataSvc', function(backEnd, $q) {
                     return item.group;
                 });
                 if (!groups.length) {
-                    _.each(_groups, function(group) {
-                        groups.push(group);
-                    });
+                    groups = _groups;
                 }
 
                 defer.resolve(groups);
