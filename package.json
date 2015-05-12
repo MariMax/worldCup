@@ -4,6 +4,7 @@
   "dependencies": {}, 
    "scripts": {
     "start": "gulp serve",
+    "test": "gulp test",
     "postinstall": "gulp build"
   },
   "devDependencies": {
