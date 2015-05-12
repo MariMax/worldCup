@@ -74,5 +74,15 @@ describe('controllers', function() {
 
     });
 
+    it('should return unsupported view if user trying to reach notFound', function() {
+        expect(scope).toBeUndefined();
+        var view = 'notFound';
+        createController(view, {});
+
+        expect(scope.currentView).toBe(view);
+        expect(scope.mode).toBe(enums.unsupported);
+
+    });
+
 
 });

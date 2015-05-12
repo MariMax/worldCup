@@ -7,6 +7,10 @@ angular.module('homeModule').controller('DetailsCtrl', function($scope, item, $s
         scope.mode = enums[$state.params.mode]?enums[$state.params.mode]:enums.unsupported;
         scope.currentView = $state.params.mode;
 
+        if ($state.params.mode === 'notFound'){
+        	scope.mode = enums.unsupported;
+        }
+
         if (!scope.item){
         	scope.mode = enums.notFound;
         }

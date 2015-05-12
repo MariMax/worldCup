@@ -1,9 +1,9 @@
 {
-  "name": "handsomeTry",
+  "name": "worldCup",
   "version": "0.0.0",
   "dependencies": {}, 
    "scripts": {
-    "start": "gulp serve dev=1",
+    "start": "gulp serve",
     "postinstall": "gulp build"
   },
   "devDependencies": {

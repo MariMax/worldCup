@@ -45,15 +45,3 @@ gulp.task('serve', ['build','watch'], function () {
     'src/**/*.css'
   ]);
 });
-
-gulp.task('serve:dist', ['build'], function () {
-  browserSyncInit('dist');
-});
-
-gulp.task('serve:e2e', function () {
-  browserSyncInit('src');
-});
-
-gulp.task('serve:e2e-dist', ['watch'], function () {
-  browserSyncInit('dist');
-});
