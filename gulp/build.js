@@ -31,13 +31,7 @@ gulp.task('setConfig:test',['removeConfig'], function(){
 });
 
 gulp.task('removeConfig', function(done){
-    fs.exists('src/app/config', function(res){
-        if (res){
-            $.del(['src/app/config'], done);
-        } else {
-            done();
-        }
-    });
+    $.del(['src/app/config'], done);
 });
 
 gulp.task('partials', function() {
