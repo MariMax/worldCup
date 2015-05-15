@@ -21,5 +21,15 @@ angular.module('homeModule').config(function($stateProvider) {
                     return dataSvc.getItem($stateParams.groupId);
                 }
             }
+        })
+        .state('error', {
+            url: '/backEndError',
+            templateUrl: 'app/home/views/Error.html',
+            controller: 'ErrCtrl',
+            resolve: {
+                error: function() {
+                    return this.self.error;
+                }
+            }
         });
 });

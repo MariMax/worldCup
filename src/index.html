@@ -17,6 +17,7 @@
     <!-- build:css({.tmp,src}) styles/app.css -->
     <!-- inject:userCss -->
     <link rel="stylesheet" href="css/chart-view.css">
+    <link rel="stylesheet" href="css/error.css">
     <link rel="stylesheet" href="css/groupSelector.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/table-view.css">
@@ -70,16 +71,17 @@
     <!-- build:js({.tmp,src}) scripts/app.js -->
     <!-- inject:userJS -->
     <script src="app/home/home.module.js"></script>
-    <script src="app/home/controllers/list.controller.js"></script>
-    <script src="app/home/controllers/details.controller.js"></script>
     <script src="app/home/services/enums.js"></script>
     <script src="app/home/services/dataSvc.js"></script>
     <script src="app/home/services/colorGenerator.js"></script>
     <script src="app/home/services/backEnd.js"></script>
     <script src="app/home/directives/chartView.js"></script>
+    <script src="app/home/controllers/list.controller.js"></script>
+    <script src="app/home/controllers/error.controller.js"></script>
+    <script src="app/home/controllers/details.controller.js"></script>
+    <script src="app/config/distConfig.js"></script>
     <script src="app/home/mock.js"></script>
     <script src="app/home/home.router.js"></script>
-    <script src="app/config/distConfig.js"></script>
     <script src="app/main.js"></script>
     <!-- endinject -->
     <!-- inject:partials -->
