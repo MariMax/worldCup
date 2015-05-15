@@ -24,7 +24,7 @@ angular.module('homeModule').config(function($stateProvider) {
         })
         .state('error', {
             url: '/backEndError',
-            templateUrl: 'app/home/views/Error.html',
+            templateUrl: 'app/home/views/error.html',
             controller: 'ErrCtrl',
             resolve: {
                 error: function() {
